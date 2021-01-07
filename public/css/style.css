@@ -1,0 +1,234 @@
+.snowFlake{
+    /* font-size: 70px; */
+    animation: rot 4s infinite linear;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+} */
+.firstLayer{
+display: flex;
+/* margin-top: -5rem; */
+/* margin-left: -4rem; */
+justify-content: space-evenly;
+background-color: rgb(53, 47, 47);
+font-size: 2rem;
+border-radius: 1rem;
+}
+.temperatureInfo{
+display: flex;
+/* font-size: 4rem; */
+justify-content: space-evenly;
+}
+.temp{
+    font-size: 6rem;
+    color: rgb(40, 228, 40);
+}
+.city_name{
+    /* text-align: left; */
+    /* margin-left: -20rem; */
+    /* font-size: 3rem; */
+    margin: 2rem;
+    /* width: 40rem; */
+}
+.sunImage{
+    margin-top: 2rem;
+    margin-left: -5rem;
+    font-size: 7rem;
+    color: yellow;
+    animation: sunRotate 2s infinite linear;
+}
+.Images{
+    margin-top: 2rem;
+    margin-left: -5rem;
+    animation: allRotate 2s infinite linear;
+    font-size: 7rem;
+    /* <i class="fas fa-cloud"></i> */
+
+}
+form{
+    width: 40rem;
+    background-color: grey;
+   border: 2px solid black;
+   text-align: center;
+   padding: 1.4rem;
+    margin: 30px auto;
+}
+.hide_class{
+    display: none;
+}
+.show_class{
+    display: flex;
+}
+#cityName{
+    padding: 0.5rem;
+    width: 37rem;
+    position: relative;
+    /* border: 10px solid black; */
+}
+#cityName[type="text"]{
+    color: green;
+    /* font-size: 4rem; */
+}
+::placeholder{
+    /* text-align: center; */
+    padding: 2px;
+    /* color: red; */
+}
+
+#submitBtn{
+    position: relative;
+    background-color: green;
+    color: white;
+    border-radius: 0.3rem;
+    outline: none;
+    /* border: none; */
+    padding: 0.3rem;
+    margin-left: -4rem;
+
+    /* bottom: 0px;
+    top: 0px; */
+}
+#submitBtn:hover{
+    color: green;
+    background-color: white;
+}
+.whole-container{
+    width: 40rem;
+    color: white;
+    background-color: rgb(44, 42, 42);
+   border: 2px solid black;
+   text-align: center;
+   padding: 1.4rem;
+    margin: -1.6rem auto;
+}
+@keyframes rot{
+    from{
+        transform: rotate(0deg);
+        
+    }
+    to{
+        transform: rotate(360deg);
+       
+    }
+}
+@keyframes sunRotate{
+    from{
+        transform: scale(1);
+        color: rgb(228, 228, 32);
+    }
+    to{
+        transform: scale(1.2);
+        color: yellow;
+    }
+}
+@keyframes allRotate{
+    from{
+        transform: scale(1);
+        
+    }
+    to{
+        transform: scale(1.2);
+       
+    }
+}
+/* main_header_left */
+.main_header_left{
+    margin-top: 7rem;
+    box-shadow: 0 8px 8px -4px black;
+}
+img{
+    height: 30rem;
+    width: 30rem;
+}
+.errorImage{
+    margin-top: 1rem;
+    width: 69.5rem;
+    height: 35rem;
+}
+.containerOfError{
+    height: 40rem;
+    background-color: rgba(208, 197, 224, 0.651);
+}
+footer{
+    width: 85.2rem;
+    padding: 1rem;
+    background-color: black;
+    position: absolute;
+    bottom: 4px;
+
+}
+footer p{
+    color: white;
+    text-align: center;
+    /* margin-top: ; */
+
+}
+@media only screen and (max-width :1000px){
+    .navBarMedia{
+        /* display: none; */
+        width: 100rem;
+       
+
+        height: auto;
+    }
+    .infoOfCityCss{
+        width: auto;
+        text-align: center;
+    }
+    .CheckNowBtn{
+        margin: 1rem auto;
+        outline: none;
+        border: none;
+        /* background-color: green; */
+        color: rgb(31, 30, 30);
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .CheckNowBtn:hover{
+        color: rgb(250, 249, 249);
+        background-color: black;
+    }
+
+    footer{
+        /* display: none; */
+        width: 100%;
+        position: absolute;
+        bottom: -10rem;
+    }
+    .temp{
+        color: white;
+    }
+    .whole-container{
+        width: auto;
+
+    }
+    form{
+        width: auto;
+    }
+    #cityName{
+        width: auto;
+    }
+   /* .mainLayer{
+       display: flex;
+       flex-direction: column;
+    } */
+    .temperatureInfo{
+       display: flex;
+       flex-direction: column-reverse;
+
+   }
+   .imageSeason{
+       /* text-align: center; */
+       margin-left: 6rem;
+   }
+}
